@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Tanveer Khan</title>
+  <meta name="description" content="Get in touch with Tanveer Khan — Senior Functional Consultant based in Houston, Texas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-initials">TK</div>
+      <div class="nav-brand-text">
+        Tanveer Khan
+        <span>IT Consultant</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-hero">
+      <p class="page-hero-label">Let's Connect</p>
+      <h1 class="page-hero-title">Get In Touch</h1>
+    </div>
+
+    <div class="section-inner">
+
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <div>
+          <p class="section-label fade-in">Contact</p>
+          <h2 class="section-title fade-in">Open to Opportunities</h2>
+
+          <p class="contact-intro fade-in">
+            Whether you're looking for an experienced Salesforce leader, an enterprise IT consultant, or a trusted advisor who can bridge the gap between technology and business — I'd be glad to connect.
+          </p>
+
+          <div class="contact-links">
+
+            <a href="https://www.linkedin.com/in/tanveerkhan-48099b" target="_blank" rel="noopener" class="contact-link-item fade-in">
+              <div class="contact-link-icon">in</div>
+              <div class="contact-link-text">
+                <div class="contact-link-label">LinkedIn</div>
+                <div class="contact-link-value">linkedin.com/in/tanveerkhan-48099b</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+
+            <div class="contact-link-item fade-in" style="cursor:default;">
+              <div class="contact-link-icon">📍</div>
+              <div class="contact-link-text">
+                <div class="contact-link-label">Location</div>
+                <div class="contact-link-value">Houston, Texas, United States</div>
+              </div>
+            </div>
+
+            <div class="contact-link-item fade-in" style="cursor:default;">
+              <div class="contact-link-icon">💼</div>
+              <div class="contact-link-text">
+                <div class="contact-link-label">Focus Areas</div>
+                <div class="contact-link-value">Salesforce · Trading &amp; Supply · Enterprise IT</div>
+              </div>
+            </div>
+
+            <div class="contact-link-item fade-in" style="cursor:default;">
+              <div class="contact-link-icon">🏆</div>
+              <div class="contact-link-text">
+                <div class="contact-link-label">Experience Level</div>
+                <div class="contact-link-value">28 Years · Senior / Principal Level</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Availability note -->
+          <div class="fade-in" style="margin-top: 2rem; padding: 1.25rem 1.5rem; background: var(--navy-mid); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 2px;">
+            <div style="font-size:0.65rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem;">Status</div>
+            <div style="font-size:0.9rem; color:var(--grey-light);">Available for senior IT consultancy, Salesforce leadership, and enterprise delivery roles. Open to remote and Houston-area engagements.</div>
+          </div>
+        </div>
+
+        <!-- Right: Contact form -->
+        <div>
+          <div class="contact-form-box fade-in">
+            <div class="form-title">Send a Message</div>
+            <div class="form-subtitle">I'll get back to you as soon as possible.</div>
+
+            <form id="contactForm" novalidate>
+
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+                <div class="form-group">
+                  <label class="form-label" for="firstName">First Name</label>
+                  <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Jane" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="lastName">Last Name</label>
+                  <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Smith" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="jane.smith@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="company">Company / Organisation</label>
+                <input class="form-input" type="text" id="company" name="company" placeholder="Acme Corp" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="subject">Subject</label>
+                <input class="form-input" type="text" id="subject" name="subject" placeholder="Consulting opportunity / Connection" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="Tell me about the opportunity or how I can help..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:0.5rem;">
+                Send Message
+              </button>
+
+            </form>
+
+            <div id="formSuccess" class="form-success">
+              <div style="font-size:2rem; margin-bottom:0.75rem;">✓</div>
+              <div>Message received. I'll be in touch shortly.</div>
+              <div style="font-size:0.8rem; color:var(--grey-mid); margin-top:0.5rem; font-family:var(--font-body);">In the meantime, connect with me on LinkedIn.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LinkedIn CTA -->
+      <div class="fade-in" style="margin-top: 4rem; text-align:center; padding: 3rem 2rem; background: var(--navy-mid); border: 1px solid var(--border); border-radius: 4px;">
+        <p style="font-size:0.65rem; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:0.75rem;">Preferred Channel</p>
+        <h3 style="font-family: var(--font-display); font-size:1.6rem; font-weight:600; color:var(--white); margin-bottom:0.75rem;">Connect on LinkedIn</h3>
+        <p style="font-size:0.92rem; color:var(--grey-light); max-width:480px; margin:0 auto 2rem; font-weight:300;">The fastest way to reach me and stay updated on my availability and interests.</p>
+        <a href="https://www.linkedin.com/in/tanveerkhan-48099b" target="_blank" rel="noopener" class="btn btn-primary">
+          View LinkedIn Profile
+        </a>
+      </div>
+
+    </div><!-- /section-inner -->
+
+    <footer>
+      <div class="footer-name">Tanveer Khan</div>
+      <div class="footer-role">Sr. Functional Consultant · Houston, Texas</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-copy">© 2025 Tanveer Khan · All rights reserved</div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
